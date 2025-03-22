@@ -16,7 +16,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(.\lib\fonts\OpenSans-Light.ttf);
+    src: url(./lib/fonts/OpenSans-Light.ttf);
 }
 
 @font-face {
@@ -24,7 +24,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 500;
-    src: url(.\lib\fonts\OpenSans-Regular.ttf);
+    src: url(./lib/fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
@@ -32,69 +32,73 @@
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src: url(.\lib\fonts\OpenSans-Bold.ttf);
+    src: url(./lib/fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Exo';
     font-style: normal;
     font-weight: 400;
-    src: url(.\lib\fonts\Exo-Light.ttf);
+    src: url(./lib/fonts/Exo-Light.ttf);
 }
 
 @font-face {
     font-family: 'Exo';
     font-style: normal;
     font-weight: 500;
-    src: url(.\lib\fonts\Exo-Regular.ttf);
+    src: url(./lib/fonts/Exo-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Exo';
     font-style: normal;
     font-weight: 700;
-    src: url(.\lib\fonts\Exo-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Boldonse';
-    src: url(.\lib\fonts\Boldonse-Regular.ttf);
+    src: url(./lib/fonts/Exo-Bold.ttf);
 }
 
 .open-sans-400 {
-    font-family: 'Open Sans', sans serif;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-style: light;
     font-weight: 400;
+    font-variation-settings: "wdth" 100;
 }
 
 .open-sans-500 {
-    font-family: 'Open Sans', sans serif;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 500;
+    font-variation-settings: "wdth" 100;
 }
 
 .open-sans-700 {
-    font-family: 'Open Sans', sans serif;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
     font-weight: 700;
+    font-variation-settings: "wdth" 100;
 }
 
 .exo-400 {
-    font-family: 'Exo', sans serif;
+    font-family: 'Exo', sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: light;
 }
 
 .exo-500 {
-    font-family: 'Exo', sans serif;
+    font-family: 'Exo', sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
 }
 
 .exo-700 {
-    font-family: 'Exo', sans serif;
+    font-family: 'Exo', sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
-}
-
-.boldonse {
-    font-family: "Boldonse", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-style: bold;
 }
 
 body {

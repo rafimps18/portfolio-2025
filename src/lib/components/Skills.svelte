@@ -12,7 +12,7 @@
 	<div class="absolute z-20 w-screen h-screen animate-pulse bg-radial-[at_0%_50%] from-purple-700 to-40% to-black bg-fixed opacity-40"></div>
 	<div class="absolute z-20 w-screen h-screen animate-pulse bg-radial-[at_100%_50%] from-purple-700 to-40% to-black bg-fixed opacity-40"></div>
 	<div class="absolute z-30">
-		<div id="tools" class="flex h-screen w-screen flex-col items-center justify-start pt-12">
+		<div id="tools" class="flex h-fit w-screen flex-col items-center justify-start pt-12">
 			<div class="mb-4 border-b-4 border-(--blue-secondary)">
 				<h1 class="exo-700 text-3xl text-white mt-1">My Tools</h1>
 			</div>
