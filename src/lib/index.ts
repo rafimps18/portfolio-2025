@@ -1,11 +1,5 @@
 export const projectsData = [
     {
-        name: "Shoeware",
-        description: "A product inventory management system for shoe retail store.",
-        imageUrl: "/project-screenshots/shoeware.png",
-        altText: "Shoeware website screenshot",
-    },
-    {
         name: "MatheMagic",
         description: "A website that provides a gamified way for learning math",
         imageUrl: "/project-screenshots/mathemagic-1.PNG",
@@ -20,6 +14,12 @@ export const projectsData = [
     {
         name: "Coffee Scan",
         description: "A mobile app that utilizes machine learning tools to recognize coffee leaf diseases.",
+        imageUrl: "/project-screenshots/coffee-scan.png",
+        altText: "Shoeware website screenshot",
+    },
+    {
+        name: "Shoeware",
+        description: "A product inventory management system for shoe retail store.",
         imageUrl: "/project-screenshots/shoeware.png",
         altText: "Shoeware website screenshot",
     },

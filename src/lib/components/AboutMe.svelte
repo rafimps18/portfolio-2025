@@ -15,7 +15,7 @@
                 One of my biggest goals is to help people achieve their goals with the help of my skills and hard work.
             </h2>
         </div>
-        <div class="lg:w-[50%] h-fit flex justify-center items-center animated-pulse bg-radial-[at_50%_60%] from-purple-300 to-60% to-black py-2">
+        <div class="w-screen lg:w-[50%] h-fit flex justify-center items-center animated-pulse bg-radial-[at_50%_60%] from-purple-300 to-70% lg:to-60% to-black py-2">
             <img src="pic1.JPG" class="h-[50vh] lg:h-[70vh] rounded-2xl" alt="graduation pic of me"/>
         </div>
     </div>
