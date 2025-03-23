@@ -3,19 +3,19 @@ export const projectsData = [
         name: "MatheMagic",
         description: "A website that provides a gamified way for learning math",
         imageUrl: "/project-screenshots/mathemagic-1.PNG",
-        altText: "Shoeware website screenshot",
+        altText: "MatheMagic website screenshot",
     },
     {
         name: "AkadeMetrics",
-        description: "A student grading system.",
+        description: "A student grading system with multi-role access.",
         imageUrl: "/project-screenshots/akademetrics-1.PNG",
-        altText: "Shoeware website screenshot",
+        altText: "AkadeMetrics website screenshot",
     },
     {
         name: "Coffee Scan",
         description: "A mobile app that utilizes machine learning tools to recognize coffee leaf diseases.",
         imageUrl: "/project-screenshots/coffee-scan.png",
-        altText: "Shoeware website screenshot",
+        altText: "Coffee Scan website screenshot",
     },
     {
         name: "Shoeware",
@@ -47,7 +47,7 @@ export const links = [
 export const contacts = [
     {
         name: "Rafael Impas",
-        icon: "/facebook-original.svg",
+        icon: "/facebook-white.svg",
         link: "https://www.facebook.com/rafaelimps",
     },
     {
@@ -57,8 +57,13 @@ export const contacts = [
     },
     {
         name: "/rafael-impas",
-        icon: "/linkedin-original.svg",
+        icon: "/linkedin-white.svg",
         link: "https://www.linkedin.com/in/rafael-impas/",
+    },
+    {
+        name: "impasrafael@gmail.com",
+        icon: "/mail-white.svg",
+        link: "mailto:impasrafael@gmail.com",
     },
 ]
 

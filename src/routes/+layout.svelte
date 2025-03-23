@@ -4,7 +4,7 @@
 	let { children } = $props();
 </script>
 
-<div class="h-full w-screen">
+<div class="h-full">
 	<Navbar />
 	{@render children()}
 </div>
