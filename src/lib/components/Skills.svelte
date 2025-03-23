@@ -41,10 +41,10 @@
 	></div>
 	<div class="absolute z-30">
 		<div id="tools" class="flex min-h-screen w-screen flex-col items-center justify-center pt-12">
-			<div class="border-(--blue-secondary) mb-4 border-b-4">
+			<div class="border-(--blue-primary) mb-4 border-b-4">
 				<h1 class="exo-700 mt-1 text-3xl text-white">My Tools</h1>
 			</div>
-			<div class="flex h-full w-full flex-row items-center justify-center gap-4 px-12">
+			<div class="flex h-full w-full flex-row items-center justify-center gap-4 px-4 md:px-12">
 				<div
 					bind:this={skillsContainer}
 					class="{skillsContainerVisible

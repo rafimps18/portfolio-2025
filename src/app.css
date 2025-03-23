@@ -2,37 +2,8 @@
 
 :root {
     --white-primary: #f5f5f7;
-    --blue-primary: #107dac;
-    --blue-secondary: #189ad3;
-    --blue-tertiary: #1ebbd7;
-    --blue-quarternary: #71c7ec;
+    --blue-primary: #33b4e2;
     --red-primary: #ff0000;
-    --red-secondary: #d70000;
-    --red-pastel: #f83e3e;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src: url(./lib/fonts/OpenSans-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 500;
-    src: url(./lib/fonts/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src: url(./lib/fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
@@ -54,30 +25,6 @@
     font-style: normal;
     font-weight: 700;
     src: url(./lib/fonts/Exo-Bold.ttf);
-}
-
-.open-sans-400 {
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-style: light;
-    font-weight: 400;
-    font-variation-settings: "wdth" 100;
-}
-
-.open-sans-500 {
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    font-variation-settings: "wdth" 100;
-}
-
-.open-sans-700 {
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-style: bold;
-    font-weight: 700;
-    font-variation-settings: "wdth" 100;
 }
 
 .exo-400 {
@@ -139,14 +86,3 @@ body {
     transform: translatex(0px);
     opacity: 1;
 }
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }

@@ -3,7 +3,7 @@
 	import MobileMenu from "./MobileMenu.svelte";
 </script>
 
-<header class="z-50 fixed w-screen bg-(--white-primary) flex flex-row justify-between items-center px-6 md:px-8 lg:pl-12">
+<header class="z-50 fixed w-screen bg-(--white-primary) flex flex-row justify-between items-center px-2 md:px-8">
     <a href="/" class="flex flex-row gap-2 justify-start items-center hover:bg-gray-200 active:bg-gray-300 rounded-lg py-1 px-2">
         <img src="/logo.png" class="w-[50px] rounded-2xl" alt="logo"/>
         <h1 class="exo-700 text-black text-xl md:text-2xl lg:text-4xl">Rafael Impas</h1>
