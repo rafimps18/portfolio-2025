@@ -21,7 +21,7 @@
 	<div class="flex h-fit w-full flex-col items-start justify-center gap-2 md:w-[33%]">
 		<h1 class="exo-700 text-xl">Contact</h1>
 		{#each contacts as link}
-			<a class="exo-500 hover:text-(--blue-primary) cursor-pointer text-base" href={link.link}>
+			<a class="exo-500 hover:text-(--blue-primary) cursor-pointer text-base" target="_blank" href={link.link}>
 				<div class=" flex flex-row items-center justify-center gap-2">
 					<img src={link.icon} class="w-[25px] md:w-[30px]" alt="logo" />
 					{link.name}
