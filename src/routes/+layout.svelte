@@ -11,6 +11,7 @@
   <meta property="og:title" content="Rafael Impas - Developer" />
   <meta property="og:url" content="https://rafael-impas.vercel.app/" />
   <meta property="og:image" content="https://rafael-impas.vercel.app/preview-image.png" />
+  <meta name="google-site-verification" content="wPgVmSFbbnOXcmLoh9ZvPga0Va2HPdodUP9gFUu_zkY" />
 </svelte:head>
 
 <div class="h-full">

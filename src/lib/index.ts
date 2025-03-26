@@ -2,7 +2,7 @@ export const projectsData = [
     {
         name: "MatheMagic",
         description: "A website that provides a gamified way for learning math",
-        imageUrl: "/project-screenshots/mathemagic-1.PNG",
+        imageUrl: "/project-screenshots/mathemagic.PNG",
         altText: "MatheMagic website screenshot",
     },
     {
