@@ -60,7 +60,7 @@ body {
 }
 
 .fadeFromBottom {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
     opacity: 0;
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }

@@ -1,41 +1,64 @@
 <script lang="ts">
-	import { onDestroy, onMount } from "svelte";
+	import { onDestroy, onMount } from 'svelte';
 
 	let {
 		headerText,
 		description,
 		imageUrl,
-        altText,
-        index,
-	}: { headerText: string; description: string; imageUrl: string; altText: string; index: number; } = $props();
+		altText,
+		index,
+		link
+	}: {
+		headerText: string;
+		description: string;
+		imageUrl: string;
+		altText: string;
+		index: number;
+		link: string;
+	} = $props();
 
-    let img: Element;
-    let imgVisible: boolean = $state(false);
-    let observer: IntersectionObserver;
+	let img: Element;
+	let imgVisible: boolean = $state(false);
+	let observer: IntersectionObserver;
 
-    onMount(()=>{
-        observer = new IntersectionObserver(
-         ([entry]) => { 
-                if (!imgVisible) {
-                    imgVisible = entry.isIntersecting
-                }
-            },
-            { threshold: 0.3 }
-        )
-        observer.observe(img);
-    })
+	onMount(() => {
+		observer = new IntersectionObserver(
+			([entry]) => {
+				if (!imgVisible) {
+					imgVisible = entry.isIntersecting;
+				}
+			},
+			{ threshold: 0.3 }
+		);
+		observer.observe(img);
+	});
 
-    onDestroy(()=>{
-        if (observer) observer.disconnect(); 
-    })
+	onDestroy(() => {
+		if (observer) observer.disconnect();
+	});
 </script>
 
-<div class="{imgVisible ? 'visibleX' : ''} {index%2 ? 'fadeFromLeft' : 'fadeFromRight' } h-fit w-fit bg-(--white-primary) border-l-8 border-(--blue-primary) py-4 px-6 gap-4 flex flex-col justify-center items-center">
+<div
+	class="{imgVisible ? 'visibleX' : ''} {index % 2
+		? 'fadeFromLeft'
+		: 'fadeFromRight'} flex h-fit w-fit flex-col items-center justify-center gap-4 border-l-8 border-(--blue-primary) bg-(--white-primary) px-6 py-4"
+>
 	<div>
-		<h1 class="exo-700 text-2xl text-center">{headerText}</h1>
+		{#if link.length > 0}
+			<a
+				class="flex flex-row gap-2 hover:text-sky-600 active:text-sky-700"
+				href={link}
+				target="_blank"
+			>
+				<h1 class="exo-700 text-center text-2xl">{headerText}</h1>
+				<img src="/open.svg" alt="open icon" />
+			</a>
+		{:else}
+			<h1 class="exo-700 text-center text-2xl">{headerText}</h1>
+		{/if}
 	</div>
 	<div>
 		<img bind:this={img} src={imageUrl} class="w-full lg:w-[50vw]" alt={altText} />
 	</div>
-    <p class="exo-500 text-xl">{description}</p>
+	<p class="exo-500 text-xl">{description}</p>
 </div>

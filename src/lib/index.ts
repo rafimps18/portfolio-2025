@@ -4,24 +4,28 @@ export const projectsData = [
         description: "A website that provides a gamified way for learning math",
         imageUrl: "/project-screenshots/mathemagic.PNG",
         altText: "MatheMagic website screenshot",
+        link: "https://mathemagic.vercel.app/"
     },
     {
         name: "AkadeMetrics",
         description: "A student grading system with multi-role access.",
         imageUrl: "/project-screenshots/akademetrics-1.PNG",
         altText: "AkadeMetrics website screenshot",
+        link: ""
     },
     {
         name: "Coffee Scan",
         description: "A mobile app that utilizes machine learning tools to recognize coffee leaf diseases.",
         imageUrl: "/project-screenshots/coffee-scan.png",
         altText: "Coffee Scan website screenshot",
+        link: ""
     },
     {
         name: "Shoeware",
         description: "A product inventory management system for shoe retail store.",
         imageUrl: "/project-screenshots/shoeware.png",
         altText: "Shoeware website screenshot",
+        link: ""
     },
 ];
 

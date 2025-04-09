@@ -53,7 +53,7 @@
 						bind:this={skillsContainer}
 						class="{skillsContainerVisible
 							? 'visibleY'
-							: ''} fadeFromTop min-h-[50vh] w-full border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-2 lg:w-[60%]"
+							: ''} fadeFromBottom min-h-[50vh] w-full border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-2 lg:w-[60%]"
 					>
 						{#each sections as section, index}
 							<h1
