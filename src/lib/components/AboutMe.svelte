@@ -13,7 +13,7 @@
 				class="flex h-fit w-full items-center justify-center border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-4 lg:w-[50%]"
 			>
 				<h2 class="exo-500 text-justify text-lg text-black lg:text-xl">
-					I am a software developer based in the Philippines, specializing in web development. Aside
+					I am a software developer based in the Philippines specializing in web development. Aside
 					from web development, I'm also interested in mobile application development as well as
 					cybersecurity. I graduated Cum Laude from Batangas State University with a Bachelor of
 					Science in Computer Science. One of my biggest goals is to help people achieve their goals

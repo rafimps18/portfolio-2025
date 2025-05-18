@@ -60,5 +60,5 @@
 	<div>
 		<img bind:this={img} src={imageUrl} class="w-full lg:w-[50vw]" alt={altText} />
 	</div>
-	<p class="exo-500 text-xl">{description}</p>
+	<p class="exo-500 text-center text-xl">{description}</p>
 </div>

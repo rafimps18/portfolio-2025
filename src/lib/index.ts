@@ -1,5 +1,12 @@
 export const projectsData = [
     {
+        name: "Eat's Good!",
+        description: "A recipe viewing website. The recipe data is gathered from The Meal DB's free recipe API.",
+        imageUrl: "/project-screenshots/eats-good-screenshot.PNG",
+        altText: "Eat's Good website screenshot",
+        link: "https://eats-good.vercel.app/"
+    },
+    {
         name: "MatheMagic",
         description: "A website that provides a gamified way for learning math",
         imageUrl: "/project-screenshots/mathemagic.PNG",
