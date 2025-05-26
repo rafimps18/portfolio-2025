@@ -7,17 +7,16 @@
 			<h1 class="exo-700 mt-1 text-3xl text-white">About Me</h1>
 		</div>
 		<div
-			class="flex min-h-[70vh] w-full flex-col-reverse items-center lg:flex-row lg:justify-center"
+			class="flex min-h-[70vh] w-[100%] flex-col-reverse items-center md:w-[75%] lg:flex-row lg:justify-center"
 		>
 			<div
-				class="flex h-fit w-full items-center justify-center border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-4 lg:w-[50%]"
+				class="flex h-fit items-center justify-center rounded-lg border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-4 md:w-[100%] lg:w-[50%]"
 			>
 				<h2 class="exo-500 text-justify text-lg text-black lg:text-xl">
-					I am a software developer based in the Philippines specializing in web development. Aside
-					from web development, I'm also interested in mobile application development as well as
-					cybersecurity. I graduated Cum Laude from Batangas State University with a Bachelor of
-					Science in Computer Science. One of my biggest goals is to help people achieve their goals
-					with the help of my skills and hard work.
+					I am a software developer based in the Philippines specializing in modern web development.
+					I'm also interested in mobile application development as well as cybersecurity. I One of
+					my biggest goals is to leverage my skills to help individuals and businesses achieve their
+					goals.
 				</h2>
 			</div>
 			<div

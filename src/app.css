@@ -4,6 +4,8 @@
     --white-primary: #f5f5f7;
     --blue-primary: #33b4e2;
     --red-primary: #ff0000;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 
 @font-face {

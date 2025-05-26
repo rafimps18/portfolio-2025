@@ -53,7 +53,7 @@
 						bind:this={skillsContainer}
 						class="{skillsContainerVisible
 							? 'visibleX'
-							: ''} fadeFromRight min-h-[50vh] w-full border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-2 lg:w-[60%]"
+							: ''} fadeFromRight min-h-[50vh] w-full rounded-lg border-l-8 border-(--blue-primary) bg-(--white-primary) px-8 py-2 lg:w-[60%]"
 					>
 						{#each sections as section, index}
 							<h1
@@ -67,7 +67,7 @@
 										{#each skillsLangFirstHalf as skill}
 											<div class="flex w-fit flex-col items-center justify-center gap-2">
 												<img src={skill.src} class="w-[50px]" alt={skill.altText} />
-												<h2 class="exo-500 text-lg text-black">{skill.name}</h2>
+												<h2 class="exo-500 text-sm text-black">{skill.name}</h2>
 											</div>
 										{/each}
 									</div>
@@ -75,7 +75,7 @@
 										{#each skillsLangSecondHalf as skill}
 											<div class="flex w-fit flex-col items-center justify-center gap-2">
 												<img src={skill.src} class="w-[50px]" alt={skill.altText} />
-												<h2 class="exo-500 text-lg text-black">{skill.name}</h2>
+												<h2 class="exo-500 text-sm text-black">{skill.name}</h2>
 											</div>
 										{/each}
 									</div>
@@ -86,7 +86,7 @@
 										{#each skillsFrameworksFirstHalf as framework}
 											<div class="flex w-fit flex-col items-center justify-center gap-2">
 												<img src={framework.src} class="w-[50px]" alt={framework.altText} />
-												<h2 class="exo-500 text-lg text-black">{framework.name}</h2>
+												<h2 class="exo-500 text-sm text-black">{framework.name}</h2>
 											</div>
 										{/each}
 									</div>
@@ -94,7 +94,7 @@
 										{#each skillsFrameworksSecondHalf as framework}
 											<div class="flex w-fit flex-col items-center justify-center gap-2">
 												<img src={framework.src} class="w-[50px]" alt={framework.altText} />
-												<h2 class="exo-500 text-lg text-black">{framework.name}</h2>
+												<h2 class="exo-500 text-sm text-black">{framework.name}</h2>
 											</div>
 										{/each}
 									</div>
@@ -104,7 +104,7 @@
 									{#each skillsDevTools as tool}
 										<div class="flex w-fit flex-col items-center justify-center gap-2">
 											<img src={tool.src} class="w-[50px]" alt={tool.altText} />
-											<h2 class="exo-500 text-lg text-black">{tool.name}</h2>
+											<h2 class="exo-500 text-sm text-black">{tool.name}</h2>
 										</div>
 									{/each}
 								</div>

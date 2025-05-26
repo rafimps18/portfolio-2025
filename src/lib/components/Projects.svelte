@@ -27,6 +27,8 @@
 						imageUrl={project.imageUrl}
 						description={project.description}
 						link={project.link}
+						github={project.github}
+						techStack={project.techStack}
 					/>
 				{/each}
 			</div>

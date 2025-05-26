@@ -1,45 +1,58 @@
 <script lang="ts">
-	import { fade, fly } from "svelte/transition";
+	import { fade, fly } from 'svelte/transition';
 
-    let copied: boolean = $state(false);
-    const email: string = "impasrafael@gmail.com";
-    function copyEmail() {
-        navigator.clipboard.writeText(email);
-        copied = true;
-        setTimeout(() => {
-            copied = false;
-        }, 2000)
-    }
+	let copied: boolean = $state(false);
+	const email: string = 'impasrafael@gmail.com';
+	function copyEmail() {
+		navigator.clipboard.writeText(email);
+		copied = true;
+		setTimeout(() => {
+			copied = false;
+		}, 2000);
+	}
 </script>
 
 <section id="contact">
-    <div class="relative w-screen min-h-screen">
-        <div class="absolute inset-0 bg-radial-[at_50%_100%] from-white to-60% to-black opacity-60 animate-pulse"></div>
-        <div class="absolute w-screen h-full">
-            <div class="flex flex-col h-screen justify-center items-center py-12 px-12">
-                <div class="border-b-4 border-(--blue-primary)">
-                    <h1 class="exo-700 text-white text-5xl mt-1">Contact Me</h1>
-                </div>
-                <div class="w-[full] md:w-[75%] lg:w-[50vw] py-8">
-                    <p class="exo-500 text-white text-lg text-center">Got a project in mind or just want to say hi? Feel free to reach out! Whether it's a collaboration, a question, or just a chat about web development, I'm always open to new connections.</p>
-                    <div class="flex flex-row gap-2 justify-center items-center pt-2">
-                        <img src="mail-white.svg" alt="mail icon" class="w-[40px]" />
-                        <p id="email" class="exo-400 text-xl text-white">
-                            {email}
-                        </p>
-                        <button onclick={copyEmail} class="p-1 md:p-3 bg-(--white-primary) hover:bg-gray-300 active:bg-gray-400 rounded-lg cursor-pointer ml-2">
-                            <img src="copy.svg" width="20rem" alt="copy icon"/>
-                        </button>
-                    </div>
-                    <div class="min-h-[2rem]"> 
-                        {#if copied}
-                            <p in:fly={{y:-10, duration:500}} out:fade={{duration:500}} class="exo-400 text-xl text-white text-center">
-                                Copied!
-                            </p>
-                        {/if}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="relative min-h-screen w-screen">
+		<div
+			class="absolute inset-0 animate-pulse bg-radial-[at_50%_100%] from-white to-black to-60% opacity-60"
+		></div>
+		<div class="absolute h-full w-screen">
+			<div class="flex h-screen flex-col items-center justify-center px-12 py-12">
+				<div class="border-b-4 border-(--blue-primary)">
+					<h1 class="exo-700 mt-1 text-5xl text-white">Contact Me</h1>
+				</div>
+				<div class="w-[full] py-8 md:w-[75%] lg:w-[50vw]">
+					<p class="exo-500 text-center text-lg text-white">
+						Got a project in mind or just want to say hi? Feel free to reach out! Whether it's a
+						collaboration, a question, or just a chat about web development, I'm always open to new
+						connections.
+					</p>
+					<div class="flex flex-row items-center justify-center gap-2 pt-2">
+						<img src="icons/mail-white.svg" alt="mail icon" class="w-[40px]" />
+						<p id="email" class="exo-400 text-xl text-white">
+							{email}
+						</p>
+						<button
+							onclick={copyEmail}
+							class="ml-2 cursor-pointer rounded-lg bg-(--white-primary) p-1 hover:bg-gray-300 active:bg-gray-400 md:p-3"
+						>
+							<img src="icons/copy.svg" width="20rem" alt="copy icon" />
+						</button>
+					</div>
+					<div class="min-h-[2rem]">
+						{#if copied}
+							<p
+								in:fly={{ y: -10, duration: 500 }}
+								out:fade={{ duration: 500 }}
+								class="exo-400 text-center text-xl text-white"
+							>
+								Copied!
+							</p>
+						{/if}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
